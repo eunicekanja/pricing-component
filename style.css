@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:hsl(240, 78%, 98%);
+    font-family:'Montserrat', sans-serif;
+    margin:10% 7%;
+}
+:root{
+--Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+--Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+--Light-Grayish-Blue: hsl(234, 14%, 74%);
+--Grayish-Blue: hsl(233, 13%, 49%);
+--Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+/*logo and toggle part*/
+.logo p{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.toggle{
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons{
+    display: flex;
+    background: linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    padding: 2px 3px;
+    border-radius: 12px;
+}
+.btn{
+    padding: 9px;
+    border-radius: 50%;
+}
+.active{
+    background: white;
+}
+/*sections*/
+hr{
+   border: none;
+    background-color: gainsboro;
+    height: 1px;
+}
+.section{
+    text-align: center;
+    background: white;
+    padding: 20px 30px;
+    margin: 5%;
+    border-radius: 8px;
+    color: var(--Dark-Grayish-Blue);
+}
+.scale{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.over{
+    background:  linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color: white;
+}
+.btns .btn-over{
+    background: white;
+    color:  linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+.section p{
+    padding: 12px 0;
+}
+.sub{
+    font-size: 14px;
+    font-weight: 600;
+}
+.main{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 15px 0;
+}
+.btns{
+    background:  linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    padding:9px 8px;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    font-family: montserrat,sans-serif;
+    border-radius: 8px;
+    margin-top: 8%;
+}
+
+/*media query*/
+@media screen and (min-width:768px) {
+    body{
+        margin: 5% 10%;
+    }
+    .toggle{
+        margin: 0 20%;
+    }
+    .main-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
